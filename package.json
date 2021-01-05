@@ -22,6 +22,14 @@
     "url": "https://github.com/vitham/nodejs-blog/issues"
   },
   "homepage": "https://github.com/vitham/nodejs-blog#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --write --tab-width 4"
+  }, 
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0"
