@@ -33,8 +33,11 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
+    "method-override": "^3.0.0",
     "mongoose": "^5.11.10",
-    "mongoose-slug-generator": "^1.0.4"
+    "mongoose-delete": "^0.5.3",
+    "mongoose-slug-generator": "^1.0.4",
+    "node-sass": "^5.0.0"
   },
   "devDependencies": {
     "husky": "^4.3.6",
