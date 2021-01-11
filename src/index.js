@@ -4,13 +4,13 @@ const morgan = require('morgan');
 const methodOverride = require('method-override');
 const handlebars = require('express-handlebars');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const route = require('./routes');
 const db = require('./config/db');
 
 //Connect to DB
-db.connect();
+db.connectWithRetry();
 
 app.use(express.static(path.join(__dirname, 'public')));
 
